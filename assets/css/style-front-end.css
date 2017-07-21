@@ -1,0 +1,200 @@
+/**************************************************/
+/* Forms
+/**************************************************/
+.pms-form input[type=text],
+.pms-form input[type=password],
+.pms-form input[type=email],
+.pms-form input[type=textarea],
+
+#pms_login input[type=text],
+#pms_login input[type=password],
+#pms_login input[type=email] {
+    width: 100%;
+}
+
+.pms-form > input[type=submit] {
+    margin-right: 20px;
+}
+
+.pms-form-fields-wrapper {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pms-field {
+    margin-bottom: 20px;
+}
+
+.pms_field-errors-wrapper p {
+    font-size: 80%;
+    color: #c0392b;
+}
+
+.pms-login-error {
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 64, 64, 0.75);
+    background: rgba(255, 64, 64, 0.1);
+}
+
+/* Success messages */
+.pms_success-messages-wrapper p {
+    padding: 5px 10px;
+    background: rgba(59,139,8, 0.2);
+    border: 1px solid rgba(59,139,8, 0.5);
+    color: rgb(49,115,7);
+}
+
+/* Warning messages */
+.pms-warning-message-wrapper {
+    padding: 20px;
+    border: 1px solid #e67e22;
+    border-radius: 5px;
+    background: rgba(230,126,34,0.25);
+    margin-bottom: 2em;
+}
+
+.pms-warning-message-wrapper > p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/**************************************************/
+/* Subscription plans
+/**************************************************/
+.pms-subscription-plans-group-wrapper {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1.6842em;
+}
+
+.pms-subscription-plan {
+    margin-bottom: 1.345em;
+}
+
+.pms-subscription-plan input {
+    margin-right: 7px;
+}
+
+.pms-subscription-plan-description {
+    font-size: 85%;
+    font-style: italic;
+    margin-left: 24px;
+}
+
+.pms-subscription-plan.pms-hidden .pms-subscription-plan-description {
+    margin-left: 0;
+}
+
+.pms-subscription-plan.pms-last,
+.pms-subscription-plans-group-wrapper.pms-last {
+    border-bottom: 0;
+}
+
+
+/**************************************************/
+/* Subscription plans - Account
+/**************************************************/
+.pms-subscription-plan.pms-subscription-plan-has-actions,
+.pms-subscription-plans-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.8421em;
+    padding-bottom: 0.8421em;
+}
+
+.pms-subscription-plan.pms-subscription-plan-has-actions:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.pms-subscription-plans-header {
+    font-weight: bold;
+}
+
+.pms-subscription-plan-name,
+.pms-subscription-plan-expiration {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-top;
+}
+
+.pms-subscription-plan-actions {
+    float: right;
+}
+
+.pms-subscription-plan-actions a {
+    margin-left: 10px;
+}
+
+.pms-subscription-plan-actions a:first-of-type {
+    margin-left: 0;
+}
+
+.pms-subscription-plan-actions .pms-action-retry-payment-wrapper {
+    text-align: right;
+}
+
+
+/**************************************************/
+/* Profile Builder Subscription Plans Field
+/**************************************************/
+.wppb-form-field.wppb-subscription-plans label {
+    width: 100%;
+    float: none;
+}
+
+.wppb-form-field.wppb-subscription-plans input {
+    display: inline-block;
+    width: auto;
+    float: none;
+    margin-right: 7px !important;
+}
+
+.wppb-form-field.wppb-subscription-plans span.description {
+    display: block;
+    font-size: 100%;
+    font-style: italic;
+    margin-left: 0;
+    margin-bottom: 1.5em;
+}
+
+
+/**************************************************/
+/* Payment Gateways Options
+/**************************************************/
+#pms-paygates-wrapper {
+    margin-bottom: 1em;
+}
+
+#pms-paygates-wrapper > label {
+    margin-right: 20px;
+}
+
+#pms-paygates-wrapper > label input[type=radio] {
+    margin-right: 7px;
+}
+
+/**************************************************/
+/* Auto-Renew Checkbox
+/**************************************************/
+.pms-subscription-plan-auto-renew {
+    margin-bottom: 1em;
+}
+
+.pms-subscription-plan-auto-renew input[type=checkbox] {
+    margin-right: 7px;
+}
+
+/**************************************************/
+/* Tables
+/**************************************************/
+.pms-table,
+.pms-table th,
+.pms-table td { border: 1px solid #e1e1e1; }
+
+.pms-table { border-width: 1px 0 0 1px; }
+
+.pms-table th,
+.pms-table td { border-width: 0 1px 1px 0; }

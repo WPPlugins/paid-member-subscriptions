@@ -1,0 +1,1126 @@
+/**************************************************/
+/* Merge Tag Bars
+/**************************************************
+#pms-available-tags.scroll {
+    position: fixed;
+    top:31px;
+    padding:15px;
+    background: #f1f1f1;
+    width:100%;
+    z-index: 100;
+    border-bottom:1px solid #cccccc;
+}
+*/
+
+#pms-available-tags {
+    position: fixed;
+    opacity: 0;
+    padding: 15px;
+    background: #f1f1f1;
+    width: 250px;
+    z-index: 100;
+}
+
+#pms-available-tags h3 {
+    margin-top: 0;
+}
+
+#pms-available-tags input.readonly, #pms-available-tags input[readonly] {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#pms-available-tags input:focus {
+    border: 0;
+    box-shadow: none;
+}
+
+
+/**************************************************/
+/* WP Dashboard Payments Summary meta-box
+/**************************************************/
+#pms-payments-summary h4 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#pms-payments-summary .pms-month-income {
+    float: left;
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+#pms-payments-summary .pms-today-income {
+    float: right;
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+#pms-payments-summary p > span {
+    display: inline-block;
+    min-width: 75px;
+}
+
+#pms-payments-summary .pms-recent-payment {
+    padding: 0 0 5px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e8e8e8;
+    clear: both;
+}
+
+#pms-payments-summary .pms-recent-payments-amount {
+    float: right;
+    display: inline-block;
+    padding: 2px 5px;
+    background: #e7e7e7;
+    border-radius: 3px;
+}
+
+#pms-payments-summary .pms-recent-payments > a:last-of-type {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+/**************************************************/
+/* Basic Information Page
+/**************************************************/
+
+.pms-wrap{
+    max-width: 1150px;
+}
+.pms-info-wrap{
+    font-size: 15px;
+    max-width:1050px;
+    margin:25px 40px 0 20px;
+}
+
+.pms-wrap h1 {
+    color: #333333;
+    font-size: 2.8em;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin:0;
+    padding-top:35px;
+}
+
+.pms-wrap .pms-callout{
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.3;
+    margin:1.1em 0 0.2em 0;
+}
+
+.pms-wrap hr{
+    display:block;
+    clear:both;
+    margin:20px 0;
+}
+
+.pms-text{
+    font-size:1.1em;
+    margin-top:0;
+}
+
+.pms-wrap ul{
+    list-style-type:circle;
+    list-style-position:inside;
+}
+
+.pms-wrap li.description{
+    font-style: italic;
+}
+
+.pms-addons h4 {
+    text-transform: uppercase;
+    min-height: 32px;
+}
+
+.pms-badge {
+    float:right;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-bottom:25px;
+    text-align: center;
+    text-rendering: optimizelegibility;
+}
+
+.pms-badge {
+    background:url(../images/pms_logo.png) center no-repeat #d54e21;
+    background-size: cover;
+}
+
+.pms-badge span {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 110px;
+    font-size: 90%;
+}
+
+.pms-addon-image {
+    width:100%;
+}
+
+.pms-info-wrap .button-primary.pms-cta {
+    background: #e14d43;
+    border-color: #d02c21 #ba281e #ba281e;
+    color: #fff;
+    -webkit-box-shadow: 0 1px 0 #ba281e;
+    box-shadow: 0 1px 0 #ba281e;
+    text-shadow: 0 -1px 1px #ba281e,1px 0 1px #ba281e,0 1px 1px #ba281e,-1px 0 1px #ba281e;
+}
+
+/* Columns :) */
+.pms-row{
+    overflow:hidden;
+}
+
+.pms-4-col > div {
+    float:left;
+    width: 23%;
+    margin-right: 2%;
+}
+
+@media screen and ( max-width: 820px ) {
+    .pms-4-col > div {
+        width: 48%;
+    }
+}
+
+.pms-3-col > div {
+    float:left;
+    width:28%;
+    margin-right:5%;
+}
+
+.pms-2-col > div {
+    float:left;
+    width:45%;
+    margin-right:5%;
+}
+
+.pms-3-col > div:last-child,
+.pms-2-col > div:last-child{
+    margin:0;
+}
+
+
+/**************************************************/
+/* Meta boxes general styling
+/**************************************************/
+.pms-meta-box-hr {
+    border: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.pms-meta-box-field-wrapper {
+    position: relative;
+    padding-left: 150px;
+    margin: 25px 0;
+}
+
+.pms-meta-box-field-wrapper.no-label {
+    padding-left: 0;
+}
+
+.pms-meta-box-field-wrapper .pms-meta-box-field-label {
+    position: absolute;
+    display: block;
+    width: 140px;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+}
+
+.pms-meta-box-field-wrapper .small {
+    width: 100px;
+}
+
+.pms-meta-box-field-wrapper input,
+.pms-meta-box-field-wrapper textarea {
+    max-width: 800px;
+}
+
+.pms-meta-box-field-wrapper textarea {
+    min-height: 100px;
+}
+
+.pms-meta-box-field-wrapper select {
+    min-width: 250px;
+}
+
+
+/**************************************************/
+/* Meta boxe: Content Restriction
+/**************************************************/
+#pms_post_content_restriction h4 {
+    background: #f1f1f1;
+    padding: 10px 7px;
+    margin: 0 -7px;
+}
+#pms_post_content_restriction .pms-meta-box-field-wrapper {
+    padding-left: 210px;
+}
+
+#pms_post_content_restriction .pms-meta-box-field-wrapper .pms-meta-box-field-label {
+    width: 200px;
+}
+
+#pms_post_content_restriction label[for=pms-content-restrict-custom-redirect-url] {
+    width: 100%;
+}
+
+/* Restrict Redirect URL */
+#pms-meta-box-fields-wrapper-restriction-redirect-url {
+    display: none;
+}
+#pms-meta-box-fields-wrapper-restriction-redirect-url.pms-enabled {
+    display: block;
+}
+
+/* Restrict custom messages wrapper and custom redirect URL wrapper */
+.pms-meta-box-field-wrapper-custom-messages,
+.pms-meta-box-field-wrapper-custom-redirect-url {
+    display: none;
+}
+.pms-meta-box-field-wrapper-custom-messages.pms-enabled,
+.pms-meta-box-field-wrapper-custom-redirect-url.pms-enabled {
+    display: block;
+}
+
+
+/**************************************************/
+/* Tables styling
+/**************************************************/
+.wp-list-table:not(.member-payments) .column-status {
+    width: 10%;
+}
+
+.wp-list-table .column-price {
+    width: 10%;
+}
+
+.wp-list-table .column-id {
+    width: 35px;
+    padding-right:0;
+    padding-left:0;
+    text-align: center;
+}
+
+.wp-list-table.member-payments .column-date {
+    width: auto;
+}
+
+.wp-list-table .pms-has-bubble {
+    position: relative;
+    cursor: pointer;
+}
+
+.wp-list-table .pms-has-bubble .pms-bubble:before {
+    content: '';
+    display: block;
+    margin-left: -6px;
+    top: -12px;
+    left: 50%;
+    border-color: transparent;
+    border-bottom-color: #23282d;
+    position: absolute;
+    border-style: solid;
+    border-width: 6px;
+    height: 0;
+    width: 0;
+}
+
+.wp-list-table .pms-has-bubble .pms-bubble {
+    position: absolute;
+    z-index: 100;
+    top: 130%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    border-radius: 3px;
+    background: #23282d;
+    padding: 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.wp-list-table .pms-has-bubble:hover .pms-bubble {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wp-list-table.payments .column-username .pms-has-bubble .pms-bubble { margin-left: -75px; }
+.wp-list-table.payments .column-username .pms-has-bubble .pms-bubble:before { left: 75px; }
+
+.wp-list-table .pms-status-dot {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 1px;
+    margin-right: 5px;
+    border: 2px solid;
+}
+
+.wp-list-table .pms-status-dot.active,
+.wp-list-table .pms-status-dot.completed {
+    border-color: #27ae60;
+}
+
+.wp-list-table .pms-status-dot.expired, .wp-list-table .pms-status-dot.inactive {
+    border-color: #c0392b;
+}
+
+.wp-list-table .pms-status-dot.canceled, .wp-list-table .pms-status-dot.refunded {
+    border-color: #f39c12;
+}
+
+.wp-list-table .pms-discount-dot {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #7cbd91;
+    color: #fff;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 11px;
+    left: 10px;
+    font-weight: bold;
+}
+
+
+/**************************************************/
+/* Tables styling: Members list
+/**************************************************/
+.wp-list-table.members .column-user_id {
+    width: 5%;
+    text-align: center;
+}
+
+.wp-list-table.members .column-subscriptions {
+    width: 40%;
+}
+
+
+.wp-list-table .pms-member-list-subscription {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.wp-list-table .pms-member-list-subscription .pms-bubble div:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+
+/**************************************************/
+/* Tables styling: Payments list
+/**************************************************/
+.wp-list-table.payments .column-id {
+    width: 5%;
+    text-align: center;
+}
+
+.wp-list-table.payments .column-username {
+    width: 14%;
+}
+
+.wp-list-table.payments .column-subscriptions {
+    width: 14%;
+}
+
+.wp-list-table.payments .column-amount {
+    width: 8%;
+}
+
+.wp-list-table.payments .column-date {
+    width: 12%;
+}
+
+.wp-list-table .pms-payment-list-subscription {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+/**************************************************/
+/* Tables styling: Subscription Plans list
+/**************************************************/
+.wp-admin.post-type-pms-subscription .wp-list-table th.column-order,
+.wp-admin.post-type-pms-subscription .wp-list-table td.column-order {
+    width: 21px;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-move-up,
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-move-down,
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-move-up:focus,
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-move-down:focus,
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-placeholder {
+    display: block;
+    position: relative;
+    width: 21px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 14px;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-top: 4px;
+    margin-left: 4px;
+    opacity: 0;
+    padding: 0;
+    box-shadow: none;
+    top: -3px;
+}
+
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-placeholder {
+    cursor: default;
+    background: #e7e7e7;
+}
+
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-move-down,
+.wp-admin.post-type-pms-subscription .wp-list-table .column-order .pms-subscription-plan-order-move-down:focus {
+    margin-top: 3px;
+}
+
+.wp-admin.post-type-pms-subscription .wp-list-table tr:hover .column-order .pms-subscription-plan-order-move-up,
+.wp-admin.post-type-pms-subscription .wp-list-table tr:hover .column-order .pms-subscription-plan-order-move-down {
+    opacity: 1;
+}
+
+.wp-admin.post-type-pms-subscription .wp-list-table tr:hover .column-order .pms-subscription-plan-order-placeholder {
+    opacity: 0;
+}
+
+.wp-admin.post-type-pms-subscription .wp-list-table tr:hover .column-order .pms-subscription-plan-order-placeholder.move-up,
+.wp-admin.post-type-pms-subscription .wp-list-table tr:hover .column-order .pms-subscription-plan-order-placeholder.move-down {
+    opacity: 0.7;
+}
+
+/**************************************************/
+/* Standard forms like add new, edit
+/**************************************************/
+.pms-form {
+    padding-top: 10px;
+    max-width: 1000px;
+}
+
+.pms-form hr {
+    border: 0;
+    border-top: 1px solid #d7d7d7;
+    margin: 25px 0;
+}
+
+.pms-form .add-new-h2 {
+    margin-left: 0;
+}
+
+.pms-form-field-wrapper {
+    position: relative;
+    padding: 20px 0 20px 160px;
+}
+
+.pms-form-field-wrapper .pms-form-field-label {
+    position: absolute;
+    display: block;
+    width: 140px;
+    top: 22px;
+    left: 0;
+    font-weight: bold;
+}
+
+.pms-form-field-wrapper .medium {
+    min-width: 200px;
+}
+
+.pms-form-field-wrapper span.readonly {
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: #e8e8e8;
+    max-width: 350px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    line-height: 21px;
+}
+
+.pms-form-field-wrapper label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pms-form-field-wrapper input,
+.pms-form-field-wrapper textarea,
+.pms-form-field-wrapper select {
+    max-width: 360px;
+}
+
+.pms-form-field-wrapper textarea {
+    min-height: 100px;
+}
+
+.pms-form-field-wrapper .wp-editor-container textarea {
+    max-width: 100%;
+}
+
+.pms-form-field-wrapper select {
+    min-width: 175px;
+}
+
+.pms-form-field-wrapper input[type=checkbox] {
+    position: relative;
+    top: -1px;
+}
+
+.pms-form-field-wrapper .spinner {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    float: none;
+    visibility: visible;
+    opacity: 0;
+    margin: 0 0 0 5px;
+}
+
+
+/**************************************************/
+/* Extra styling for admin notices
+/**************************************************/
+.wrap div.pms-admin-notice {
+    margin-bottom: 0;
+}
+
+
+/**************************************************/
+/* Subscription Plan Postbox Meta-Box
+/**************************************************/
+body.post-type-pms-subscription #delete-action {
+    display: none;
+}
+
+#pms-delete-action {
+    line-height: 28px;
+    vertical-align: middle;
+    text-align: left;
+    float: left;
+}
+
+#pms-upgrade-downgrade-buttons-wrapper {
+    display: none;
+}
+
+
+/**************************************************/
+/* Subscription Plan Details Meta-Box
+/**************************************************/
+#pms-subscription-plan-duration {
+    width: 100px;
+}
+
+#pms-subscription-plan-duration-unit {
+    position: relative;
+    top: -2px;
+    min-width: 145px;
+}
+
+
+/**************************************************/
+/* Subscription Plan User Roles Meta-Box
+/**************************************************/
+#pms_subscription_user_roles .pms-meta-box-field-wrapper {
+    padding-left: 17px;
+}
+
+#pms_subscription_user_roles .pms-meta-box-radio-label {
+    font-weight: bold;
+}
+
+#pms_subscription_user_roles .description {
+    margin-left: 25px;
+}
+
+#pms_subscription_user_roles input[type=radio] {
+    margin-right: 8px;
+}
+
+#pms_subscription_user_roles select {
+    margin-left: 10px;
+}
+
+/**************************************************/
+/* Subscription Plan Save Meta-Box - hiding stuff
+/**************************************************/
+/* Remove the default "Move to Trash button"
+   Remove the "Edit" link for Subscription Plan status
+   Remove the "Visibility" box for discount codes
+   Remove the "Save Draft" button
+   Remove the "Status" div
+   Remove the "Published on.." section
+   */
+.post-type-pms-subscription #delete-action,
+.post-type-pms-subscription .edit-post-status,
+.post-type-pms-subscription #visibility,
+.post-type-pms-subscription #minor-publishing-actions,
+.post-type-pms-subscription div.misc-pub-post-status,
+.post-type-pms-subscription #misc-publishing-actions
+{
+    display:none;
+}
+
+
+#pms_post_content_restriction .pms-meta-box-checkbox-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/**************************************************/
+/* Members add new/edit page
+/**************************************************/
+.wp-list-table.member-subscriptions tr {
+    transition: all 0.15s ease-in-out;
+}
+
+.wp-list-table.member-subscriptions tr.edit-active {
+    opacity: 1;
+}
+
+.wp-list-table.member-subscriptions tr.edit-active .trash {
+    display: none;
+}
+
+.wp-list-table.member-subscriptions tr.edit-active .pms-edit-subscription-details-cancel {
+    display: inline-block;
+}
+
+.wp-list-table.member-subscriptions tr.edit-inactive {
+    opacity: 0.65;
+}
+
+.wp-list-table.member-subscriptions tr.edit-inactive select,
+.wp-list-table.member-subscriptions tr.edit-inactive input {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.wp-list-table.member-subscriptions tr.edit-active select,
+.wp-list-table.member-subscriptions tr.edit-active input {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wp-list-table.member-subscriptions td,
+.wp-list-table.member-subscriptions th {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 28px;
+}
+
+.wp-list-table.member-subscriptions td select,
+.wp-list-table.member-subscriptions td input {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 90%;
+    font-size: 13px;
+    height: 28px;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.15s ease-in-out;
+}
+
+.wp-list-table.member-subscriptions td select {
+    left: 7px;
+}
+
+.wp-list-table.member-subscriptions td .pms-field-error {
+    box-shadow: 0 0 1px 1px #e74c3c;
+    transition: all 0.15s ease-in-out;
+}
+
+.wp-list-table.member-subscriptions .row-actions {
+    float: left;
+    margin-left: 20px;
+    visibility: visible;
+    padding: 0;
+}
+
+.wp-list-table.member-subscriptions .row-actions .button {
+    width: 56px;
+    text-align: center;
+    transition: all 0.15s ease-in-out;
+}
+
+.wp-list-table.member-subscriptions .row-actions .pms-edit-subscription-details-cancel {
+    display: none;
+    width: auto;
+    margin-left: 15px;
+}
+
+.wp-list-table.member-subscriptions .row-actions .trash {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.wp-list-table.member-subscriptions .column-status {
+    width: 12%;
+}
+
+.wp-list-table.member-subscriptions tfoot,
+.wp-list-table.member-payments tfoot {
+    display: none;
+}
+
+.wp-list-table.member-subscriptions td .spinner {
+    position: absolute;
+    z-index: 100;
+    right: 8px;
+    top: 10px;
+    visibility: visible;
+    opacity: 0;
+}
+
+
+.wp-list-table.member-payments td,
+.wp-list-table.member-payments th {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 28px;
+}
+
+
+#pms-form-add-new-member .row-actions {
+    float: right;
+}
+
+#pms-form-add-new-member .row-actions,
+#pms-form-edit-member .row-actions {
+    left: 0;
+}
+
+#pms-form-add-new-member .tablenav,
+#pms-form-edit-member .tablenav {
+    margin-top: 10px;
+}
+
+#pms-form-add-new-member .tablenav .spinner,
+#pms-form-edit-member .tablenav .spinner {
+    position: relative;
+    top: -3px;
+    float: none;
+}
+
+#pms-form-add-new-member .tablenav.top,
+#pms-form-edit-member .tablenav.top {
+    height: 0;
+}
+
+#pms-form-add-new-member .tablenav .actions,
+#pms-form-edit-member .tablenav .actions {
+    display: none;
+}
+
+#pms-form-add-new-member .tablenav .add-new-h2,
+#pms-form-add-new-member .tablenav .add-new-h2:hover,
+#pms-form-edit-member .tablenav .add-new-h2,
+#pms-form-edit-member .tablenav .add-new-h2:hover {
+    margin-left: 0;
+    top: 0;
+    display: inline-block;
+}
+
+#pms-form-add-new-member .tablenav .add-new-h2:focus,
+#pms-form-edit-member .tablenav .add-new-h2:focus {
+    box-shadow: none;
+}
+
+#pms-form-add-new-member .tablenav .add-new-h2.disabled,
+#pms-form-edit-member .tablenav .add-new-h2.disabled {
+    color: #c1c1c1;
+    background: #e0e0e0;
+}
+
+#pms-form-add-new-member-bulk .bulkactions {
+    padding: 0;
+}
+
+#pms_add_member_bulk_subscription_plan {
+    min-width: 250px;
+}
+
+#pms-form-add-new-member-bulk .column-user_id {
+    width: 5%;
+    text-align: center;
+}
+
+
+/**************************************************/
+/* Settings Page
+/**************************************************/
+.pms-tab-wrapper {
+    margin-top: 4em;
+}
+
+.pms-tab {
+    display: none;
+    max-width: 900px;
+}
+
+.pms-tab.tab-active {
+    display: block;
+}
+
+.pms-tab h3 {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+}
+
+.pms-payment-gateway-wrapper {
+    padding-top: 10px;
+    max-width: 800px;
+}
+
+.pms-payment-gateway-title {
+    padding-bottom: 10px;
+    font-size: 1.15em;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#pms-settings-messages h3 {
+    margin-bottom: 2em;
+}
+
+/* E-mail Settings tabs */
+#pms-settings-emails {
+    padding-right: 300px;
+    width: 100%;
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/**************************************************/
+/* Reports Page
+/**************************************************/
+#pms-form-reports {
+    max-width: 100%;
+}
+
+
+/* Add-Ons page */
+.pms-wrap.pms-add-ons-wrap {
+    max-width: 100%;
+}
+
+.pms-add-on-user-messages{ display: none; }
+
+.pms-add-ons-wrap .plugin-card-bottom {
+    padding: 12px;
+}
+
+.pms-add-on-wrap .plugin-card-bottom:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.pms-add-on a:focus {
+    box-shadow: none;
+}
+
+.pms-add-on img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pms-add-on .pms-add-on-title {
+    letter-spacing: -0.7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.pms-add-on .pms-add-on-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pms-add-on .pms-add-on-price {
+    font-size: 1.15em;
+    letter-spacing: -0.7px;
+    margin: 14px 0 7px 0;
+    padding-bottom: 7px;
+    line-height: 23px;
+    height: 28px;
+    opacity: 0.8;
+}
+
+.pms-add-on .pms-add-on-serial-number {
+    position: relative;
+    line-height: 28px;
+    width: 100%;
+    padding: 3px 8px;
+}
+
+
+.pms-add-on-serial-number-wrapper {
+    position: relative;
+    margin-top: 11px;
+}
+
+.pms-add-on-serial-number-wrapper .status-dot {
+    display: none;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 12px;
+    left: 10px;
+    border: 3px solid;
+}
+
+.pms-add-on-serial-number-wrapper.pms-error .pms-add-on-serial-number,
+.pms-add-on-serial-number-wrapper.pms-found .pms-add-on-serial-number {
+    padding-left: 30px;
+}
+
+.pms-add-on-serial-number-wrapper.pms-error .status-dot {
+    display: block;
+    border-color: #dd3d36;
+}
+
+.pms-add-on-serial-number-wrapper.pms-found .status-dot {
+    display: block;
+    border-color: #27ae60;
+}
+
+.pms-add-on-serial-number-wrapper:hover .save-serial {
+    opacity: 1 !important;
+}
+
+.pms-add-on .button.save-serial{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    box-shadow: none;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.pms-add-on-compatible span {
+    line-height: 28px;
+}
+
+.pms-add-on-not-compatible {
+    position: relative;
+}
+
+.pms-add-on-not-compatible:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #d54e21;
+    top: 0;
+    left: 0;
+}
+
+.pms-add-on .button {
+    position: relative;
+}
+
+.pms-add-on .button.pms-add-on-deactivate {
+    opacity: 0;
+}
+
+.pms-add-on .spinner {
+    display: block;
+    margin-top: 4px;
+    opacity: 0;
+    visibility: visible;
+}
+
+.pms-add-on-spinner {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/spinner.gif') no-repeat center;
+}
+
+.pms-confirmation-success {
+    color: #27ae60;
+}
+
+.pms-confirmation-error {
+    color: #c0392b;
+}
+
+
+/**************************************************/
+/* Uninstall Page
+/**************************************************/
+.pms-wrap.pms-uninstall-wrap {
+    max-width: 750px;
+}
+
+.pms-wrap.pms-uninstall-wrap .pms-admin-notice {
+    margin: 25px 0;
+}
+
+.pms-admin-notice.pms-error {
+    background: #fff;
+    border-left: 4px solid #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 15px 2px;
+    padding: 1px 12px;
+    border-left-color: #dc3232;
+}
+
+.pms-uninstall-thickbox-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e1e1e1;
+}
+
+
+/* Add-On Bundle */
+.pms-add-on-bundle { padding: 3px; }
+.pms-add-on-bundle h3 { margin-top: 10px; }
+.pms-add-on-bundle .plugin-card-top { padding: 0 0 15px 0; text-align: center; }
+
+/**************************************************/
+/* Smaller screens
+/**************************************************/
+@media screen and ( max-width: 1366px ) {
+    .wp-list-table.payments .column-id {
+        width: 6.5%;
+    }
+}
